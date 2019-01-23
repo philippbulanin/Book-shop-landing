@@ -1,0 +1,554 @@
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-bottom: 4px solid #454648;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------- WRAPPERS -----------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.authorization_wrapper,
+.head_wrapper,
+.menu_wrapper,
+.main_wrapper,
+.footer__main_wrapper,
+.footer__cards_wrapper,
+.footer__copyrights_wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------------------- HEADER ----------------------------------------------------- */
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.container__header {
+    min-height: 140px;
+}
+
+.mobile {
+    display: none;
+}
+
+/*--------------------------------------------------- AUTHORIZATION --------------------------------------------------*/
+
+.header__authorization {
+    background: #424242;
+    min-height: 28px;
+}
+
+.authorization__ul {
+    margin: 0;
+    padding: 0;
+}
+
+.authorization__li {
+    list-style-type: none;
+    font-size: 12px;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    text-shadow: 1px 1px 1px #8e8e8e;
+}
+
+.authorization__a {
+    display: block;
+    min-height: 28px;
+    padding: 7px 14px 0px 14px;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.authorization__a:hover {
+    background: #f2f2f2;
+    color: #424242;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/*----------------------------------------------------- HEAD ---------------------------------------------------------*/
+
+.header__head {
+    background: linear-gradient(to bottom, #ffffff, #ebebeb);
+    border-bottom: 1px solid #ebebeb;
+}
+
+/*------- SEARCH ------*/
+
+.head_wrapper {
+    min-height: 110px;
+}
+
+.search__form__input {
+    height: 28px;
+    width: 100%;
+    padding: 2px 5px 2px 5px;
+    font-size: 23px;
+    color: #cecece;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    border: 4px solid #79b260;
+    border-radius: 2px 0 0 2px;
+    outline: none;
+}
+
+.search__form__button {
+    height: 40px;
+    background: #79b260;
+    border: 4px solid #79b260;
+    cursor: pointer;
+    outline: none;
+}
+
+.search__form__button__img {
+    margin-left: -5px;
+    margin-right: 5px;
+}
+
+.search__form__button__text {
+    font-size: 23px;
+    color: #ffffff;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+}
+
+/*-------- CART -------*/
+
+.head__cart__top {
+    margin-bottom: -15px;
+}
+
+.head__cart__bottom {
+    margin-top: -15px;
+}
+
+.head__cart__img {
+    height: 29px;
+}
+
+.head__cart__h3 {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #6d6d6d;
+    font-weight: 500;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    text-shadow: 1px 0px 1px #aeaeae;
+}
+
+.head__cart__buy {
+    margin-left: 5px;
+    font-size: 11px;
+    color: #6d6d6d;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    text-shadow: 1px 0px 1px #aeaeae;
+}
+
+.head__cart__total {
+    margin-left: 5px;
+    font-size: 21px;
+    color: #6d6d6d;
+    font-weight: bold;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    text-shadow: 1px 0px 1px #ababab;
+}
+
+.head__cart__button {
+    width: 80px;
+    height: 26px;
+    margin-left: 10px;
+    border: 1px groove #696969;
+    border-radius: 3px;
+    background: #414141;
+    font-size: 13px;
+    color: #f2f2f2;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    text-shadow: 1px 0px 1px #858585;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+/*----- WISH-LIST -----*/
+
+.head__wish-list {
+    position: relative;
+    text-decoration: none;
+    margin: 20px 20px 20px 7px;
+    padding: 0 20px;
+    border-left: 1px solid #c6c6c6;
+    font-size: 17px;
+    color: #6d6d6d;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    text-shadow: 1px 0px 1px #878787;
+}
+
+.head__wish-list:hover {
+    transition: 0.5s;
+    border-radius: 5px;
+    background: rgb(255, 255, 255, 0.99);
+}
+
+.head__wish-list__top {
+    position: absolute;
+    bottom: 35px;
+}
+
+
+.head__wish-list__bottom {
+    position: relative;
+    bottom: -17px;
+}
+
+.head__wish-list__counter {
+    position: absolute;
+    right: -13px;
+    height: 16px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    background: #79b260;
+    font-size: 11px;
+    color: #ffffff;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    text-shadow: 1px 0px 1px #afd1a0;
+}
+
+/*---------------------------------------------------- MENU ----------------------------------------------------------*/
+
+.header__menu {
+    min-height: 40px;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__ul {
+    min-height: 40px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu__li {
+    list-style-type: none;
+    font-size: 14px;
+    margin-bottom: -12px;
+    overflow: hidden;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #5b5b5b;
+    text-shadow: 1px 1px 1px #a8a8a8;
+}
+
+.menu__a {
+    min-height: 40px;
+    display: block;
+    padding: 12px 10px 0 10px;
+    text-decoration: none;
+    color: #5b5b5b;
+/ / border: 1 px solid rebeccapurple;
+}
+
+.menu__a:hover {
+    color: #ffffff;
+    background: #8ed171;
+    transition: 0.5s;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------- MAIN -------------------------------------------------------- */
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.container__main {
+    min-height: 300px;
+}
+
+/* ---------------------------------------------------- ASIDE ------------------------------------------------------- */
+
+.main__aside {
+    margin-top: 10px;
+    border: 1px solid #d6d6d6;
+    min-width: 190px;
+}
+
+.aside__h2 {
+    margin: 10px 0 20px 20px;
+    list-style-type: none;
+    font-size: 24.33px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #7f7d7d;
+    text-shadow: 1px 1px 1px #f5f5f5;
+}
+
+.aside__h3 {
+    margin: 0 0 -10px 15px;
+}
+
+.aside__ul {
+    padding: 0;
+}
+
+.aside__li {
+    list-style-type: none;
+}
+
+.aside__a, .aside__all {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 15.33px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #555454;
+    text-shadow: 1px 0px 1px #c4c3c3;
+}
+
+.aside__a_wrapper {
+    width: 150px;
+    padding: 5px 0 4px 0px;
+    margin-left: 17px;
+    height: 20px;
+    border-bottom: 1px solid #e6e7e8;
+}
+
+.aside__all {
+/ / margin-bottom: - 15 px;
+}
+
+.aside__all__wrapper {
+    width: 150px;
+    padding: 5px 0 4px 0px;
+    margin-left: 17px;
+    height: 20px;
+}
+
+.aside__a:hover .aside__a_wrapper {
+    border-bottom: none;
+}
+
+.aside__a:hover, .aside__all:hover {
+    background: linear-gradient(to bottom, #92d774, #79b360);
+    font-size: 15.33px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #eff7eb;
+    text-shadow: 1px 0px 1px #c4c3c3;
+    transition: .5s;
+}
+
+.aside__ul .aside__li:last-child .aside__a_wrapper {
+    border-bottom: none;
+}
+
+/* ---------------------------------------------------- CONTENT ----------------------------------------------------- */
+
+.main__content {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 50px;
+    border: 1px solid #d6d6d6;
+}
+
+.content__head__h2 {
+    margin: 10px 20px 20px 30px;
+    list-style-type: none;
+    font-size: 24.33px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #7f7d7d;
+    text-shadow: 1px 1px 1px #f5f5f5;
+}
+
+/*------- POST -----------*/
+
+.posts-container__post {
+    position: relative;
+    width: 124px;
+    margin: 20px 20px -10px 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.posts-container__post:hover {
+    margin-top: 12px;
+    background: rgb(239, 239, 239, 0.6);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.post__cover {
+    width: 124px;
+}
+
+.post__caption {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #595959;
+    text-shadow: 1px 1px 1px #e9e9e9;
+}
+
+.post__price {
+    margin: 0;
+    text-align: center;
+    font-size: 21.67px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #f05356;
+    text-shadow: 1px 1px 1px #fde8e8;
+}
+
+.sale {
+    right: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #f05356;
+    transition: 1s;
+}
+
+.sale__percent {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #f7a3a5;
+}
+
+.sale__off {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    font-size: 13px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #f7a3a5;
+}
+
+.posts-container__post:hover .sale {
+    transform: rotate(30deg);
+    transition: 1s;
+}
+
+/*--------- PAGES ----------*/
+
+.content__pages {
+    position: absolute;
+    bottom: -17px;
+    right: 20px;
+}
+
+.pages__li {
+    list-style-type: none;
+}
+
+.pages__a {
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 22px;
+    height: 23px;
+    border: 1px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+    font-size: 15.67px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #646464;
+    text-shadow: 1px 1px 1px #f5f5f5;
+}
+
+.pages__a:hover {
+    border: 1px solid #e0e0e0;
+    border-bottom: 4px solid #81bd66;
+    transition: .5s;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------- FOOTER ------------------------------------------------------ */
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.footer__main {
+    margin: 0;
+    background-image: url("../img/footer-bg1.png");
+}
+
+.footer__main__h2 {
+    font-size: 19.67px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #a8aaa8;
+    text-shadow: 1px 1px 1px #5d655f;
+}
+
+.footer__main__ul {
+    padding: 0px;
+}
+
+.footer__main__li {
+    width: 170px;
+    border-bottom: 1px solid #4f5250;
+    padding: 6px 0;
+    font-size: 13.67px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #afb0b0;
+    text-shadow: 1px 1px 1px #676469;
+    list-style-type: none;
+}
+
+.footer__main__li_wrapper {
+    width: 200px;
+}
+
+.footer__cards {
+    margin: 0;
+    background-image: url(../img/footer-bg2.png);
+    border-bottom: 1px solid #515155;
+}
+
+.footer__cards__h2 {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 19.67px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #dddddd;
+    text-shadow: 1px 1px 1px #838380;
+}
+
+.footer__cards__images {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.footer__copyrights {
+    background-image: url(../img/footer-bg2.png);
+}
+
+.footer__copyrights__text {
+    font-size: 15.67px;
+    font-weight: 100;
+    font-family: "Segoe MDL2 Assets", sans-serif;
+    color: #dddddd;
+    text-shadow: 1px 1px 1px #838380;
+}
